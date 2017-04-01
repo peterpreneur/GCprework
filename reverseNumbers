@@ -1,0 +1,19 @@
+package com.company;
+import java.util.Scanner;
+
+public class reverseNumbers {
+    public static void main(String args[])
+    {
+        int i=0, revNum =0;
+        System.out.println("Input your number and press enter: ");
+        Scanner in = new Scanner(System.in);
+        i = in.nextInt();
+        while( i != 0 )
+        {
+            revNum  = revNum  * 10;
+            revNum  = revNum  + i%10;
+            i = i/10;
+        }
+        System.out.println("Reverse of input number is: "+revNum);
+    }
+}
